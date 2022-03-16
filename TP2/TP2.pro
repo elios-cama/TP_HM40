@@ -9,14 +9,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    Controller/fittscontroller.cpp \
+    Model/fittsmodel.cpp \
+    View/fittsview.cpp \
+    View/graphicwidget.cpp \
+    main.cpp
 
 HEADERS += \
-    mainwindow.h
+    Controller/fittscontroller.h \
+    Model/fittsmodel.h \
+    View/fittsview.h \
+    View/graphicwidget.h
 
-FORMS += \
-    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

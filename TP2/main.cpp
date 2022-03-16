@@ -1,11 +1,13 @@
-#include "mainwindow.h"
+#include "View/fittsview.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+
+    FittsView *Mainwindow = new FittsView ;
+    Mainwindow->show() ;
+
     return a.exec();
 }
